@@ -8,4 +8,5 @@
     <migrationTask xmi:id="_-2lscJW6Ee6SHvszc5C5_Q" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_-18MMpW6Ee6SHvszc5C5_Q" login="abdelkader.bagtache@nfr.keyrus.com" firstName="abdelkader" lastName="bagtache" type="DQ"/>
+  <TalendProperties:User xmi:id="_reUBYJj1Ee6AL4BaQT2o6A" login="amar.belgacem@nfr.keyrus.com" firstName="Amar" lastName="Belgacem" type="DQ"/>
 </xmi:XMI>
