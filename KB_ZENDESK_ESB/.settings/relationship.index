@@ -1,1 +1,12 @@
-[ ]
+[ {
+  "baseItem" : {
+    "id" : "_a_zTAI0tEe6hK4pt3R1TVA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "TalendHTMLUtils",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+} ]

@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -105,14 +107,141 @@
     <routinesParameter id="__kAzIJW6Ee6SHvszc5C5_Q" name="TalendDate"/>
     <routinesParameter id="__kIH4JW6Ee6SHvszc5C5_Q" name="TalendString"/>
     <routinesParameter id="__kOOgJW6Ee6SHvszc5C5_Q" name="TalendStringUtil"/>
+    <routinesParameter id="_nd5x8JW-Ee6tsIgM46wgZA" name="DataMasking"/>
+    <routinesParameter id="_nfEPkJW-Ee6tsIgM46wgZA" name="DQTechnical"/>
+    <routinesParameter id="_newGgJW-Ee6tsIgM46wgZA" name="DqStringHandling"/>
+    <routinesParameter id="_neirIJW-Ee6tsIgM46wgZA" name="DataQualityDependencies"/>
+    <routinesParameter id="_nePwMJW-Ee6tsIgM46wgZA" name="DataQuality"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_629ad1e1-b1cb-4b51-ac3a-4274fda6b3c2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KXd3MQOiz7sHSfEqe8tWo8Jr0ba6oj3Bi3qOclDv5cRD7EAs1GtoYj2+yPgqzG2fbVh3O/BGQMzZ&#13;
-CjKQkMNnDw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0590785-e145-48b4-af2a-24d911e67bd9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+7NDXVxq4y2CEivKozJ/toxRwikFxxsFt+SxUgijCc1FBU+U7rF33OqrH2J47GdeQyg6XIiAYr28&#13;
-FWS/u9EihQ==</DigestValue></Reference></SignedInfo><SignatureValue>ncwbRzFrHOanXzoIC8e2e3zkH0tofR/pVAR5ZIF9AdRfCrJb4mvsaDlmhdNwGzGY/YNvCqi7TQcs&#13;
-da6AypmXb6j+iwhLgoJpiKcylEz8G7t+hNhn8wIAgKvl4e39cQGod17FKoERjeHzAVVLD9OIKu1E&#13;
-ri/qvw5ROo8ld1XVXJhyvTBzU+xEls6dErMQ8SqAo3B/olKQ1+lmREw8j+/hen+w1cIR5e7el0Uz&#13;
-0pbQx9l4eXZpBMEVlVmc/8YFPISuS+DLRXCgLvhRLHyd5zbTBIVvgKEhMilTmsYEieSE4+WuSTuH&#13;
-5M9wBTP/0EkucQB64qbUQa7dvw7AFNa9sO0N8Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="ZendeskInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tZendeskInput_1"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="emVuZGVzayNaZW5kZXNrI0lucHV0"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.serverUrl" value="https://pdi-keyrus.zendesk.com"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authenticationLogin" value="julien.servillat@keyrus.com"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.apiToken" value="enc:system.encryption.key.v1:S/VE5VTt3MtZn2DqVxWhX28f037sqAfCTwzVPnSxIuvfxau5DE+fpjUMc0y/fKHBPe3xlVbTGHtdfVa/WkzPVRJC28AZRA=="/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.selectionType" value="TICKETS"/>
+    <elementParameter field="TEXT" name="configuration.queryString" value="Allo"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" show="false" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" show="false" value="-1"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+    <metadata connector="FLOW" name="tZendeskInput_1">
+      <column comment="" key="false" length="-1" name="subject" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="priority" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="subject"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="subject" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="priority" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="subject"/>
+      <elementValue elementRef="VALUE" value="&quot;Test ticket&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+      <elementValue elementRef="VALUE" value="&quot;low&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="VALUE" value="&quot;this is a test ticket&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="subject" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="priority" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="ZendeskOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tZendeskOutput_1"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="emVuZGVzayNaZW5kZXNrI091dHB1dA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.serverUrl" value="https://pdi-keyrus.zendesk.com"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.authenticationLogin" value="julien.servillat@keyrus.com"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.apiToken" value="enc:system.encryption.key.v1:ZHmdxJjq/fHggKj0U4S4ti1zVIrRKfurQ7rTpMtccshIUu2nq9QtJg2eOwI/Eg1VLjIJl2jhm7ho/dQHQPGJecY5oEKWyw=="/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.selectionType" value="TICKETS"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="CREATE"/>
+    <elementParameter field="TEXT" name="configuration.$maxBatchSize" value="1000"/>
+    <elementParameter field="CHECK" name="configuration.deletePermanently" show="false" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.__version" show="false" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" show="false" value="-1"/>
+    <metadata connector="FLOW" name="tZendeskOutput_1">
+      <column comment="" key="false" length="-1" name="subject" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="priority" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tZendeskInput_1" offsetLabelX="0" offsetLabelY="0" source="tZendeskInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tZendeskOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tZendeskInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tZendeskInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f457bd3b-7b43-400c-84e3-2bf1f106ce97"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vVJUC1gnH04YBVKCJDRNDtpHF8TNzhUmcgqg8bCAOLTT2CT8kZgxox/VWvrkkDTECO+afKVo/ki0&#13;
+DkFP0gAa+A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_58fff904-a5e8-481f-9e05-ccde97e40543"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EdVoY70BVmG5ZOSUBv1o3au1/w9+V1vS45GBE57cGfZ4kcb6bqbh6TU1Qm/pJ9Ul+E/NetQF2qYP&#13;
+GTB6MfG5oQ==</DigestValue></Reference></SignedInfo><SignatureValue>gY2QTmvxgEstiaGvOlgSGPqQPOafgnrkBbACVMlX3kKNrwggDR5LwjHj4CqK4Kd0of5/1i0zz8jo&#13;
+bxJ/THdexnECSbjO3K8ErQbb3e+DjkAAgex0ArjYOEt5+gOT63DDyFKTbC4D+E0CTaCqehIaCiaJ&#13;
+MNn42vHUbCK9fyoWGWoJc4v8t0w55/Goc+7VFPhqktWkMRrXb6qR5iJ54gIS6UgcdkCE0pvkN1n7&#13;
+ogjOpM206yRtkFBcJLaMQWwhM/+VH2RjHu9lYPF8uSC6nZClUTQuD5RaXC1x1K8BQvya6f7Nu+p8&#13;
+43hM0a0J/ndU9J9kpfhA9rNTp6QbQ7mCNpVJTA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +263,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0590785-e145-48b4-af2a-24d911e67bd9" Target="#_629ad1e1-b1cb-4b51-ac3a-4274fda6b3c2"><Timestamp>2023-12-08 11:40:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_58fff904-a5e8-481f-9e05-ccde97e40543" Target="#_f457bd3b-7b43-400c-84e3-2bf1f106ce97"><Timestamp>2023-12-08 14:40:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
